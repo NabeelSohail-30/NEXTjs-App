@@ -1,5 +1,6 @@
 import React from "react";
 import TicketCard from "./(components)/TicketCard";
+import Hero from "./(components)/Hero";
 
 const getTickets = async () => {
   try {
@@ -26,6 +27,7 @@ const Dashboard = async () => {
 
   return (
     <div className="p-5">
+      <Hero />
       <div>
         {tickets &&
           uniqueCategories?.map((uniqueCategory, categoryIndex) => (
